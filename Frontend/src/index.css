@@ -1,0 +1,9 @@
+:root {
+  --component-color:#FF5D49;
+  --primary-color: #050A30;
+  --secondary-color: #F4F6FC;
+  --tertiary-color: #A6A8AF;
+  --button-width: 80px;
+  --button-height: 35px;
+  --border-radius: 7px;
+}
