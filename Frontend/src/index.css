@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --component-color:#FF5D49;
   --primary-color: #050A30;
@@ -6,4 +8,11 @@
   --button-width: 80px;
   --button-height: 35px;
   --border-radius: 7px;
+  --first-fancy-font: "Montserrat", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

@@ -1,0 +1,53 @@
+.card {
+    padding: 10px 20px 30px 20px;
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.347);
+    backdrop-filter: blur(4px);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.299);
+}
+
+.serviceName{
+    font-size: 25px;
+    color: var(--secondary-color);
+    font-family: var(--first-fancy-font);
+    font-weight: 400;
+}
+
+.serviceImage{
+    width: 100%;
+}
+.cardBtn{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.cardBtn button{
+    padding: 5px 10px ;
+    width: auto;
+    height: 30px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.workBtn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    transition: scale ease-in 0.2s;
+    &&:hover{
+        background-color: var(--component-color);
+        color: black;
+        scale: 1.05;
+    }
+}
+.cardBtn .bookShootBtn{
+    background-color: var(--component-color);
+    border: none;
+    transition: scale ease-in 0.2s;
+    &&:hover{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        scale: 1.05;
+    }
+}

@@ -1,0 +1,30 @@
+.headerDiv{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: var(--component-color);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerDiv .homeLink{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.headerDiv .logo{
+    width: 70px;
+}
+
+.phoneNumberDiv{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.phoneNumberDiv a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}

@@ -1,0 +1,23 @@
+.navbarDiv{
+    width: auto;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.navbarDiv a{
+    padding: 10px 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    &:hover{
+        background-color: red;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+.active{
+    color: var(--component-color);
+}
