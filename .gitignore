@@ -12,6 +12,10 @@ yarn-error.log*
 *.jpeg
 *.png
 *.gif
+
+#video
+*.mp4
+
 # Logs
 logs
 *.log
