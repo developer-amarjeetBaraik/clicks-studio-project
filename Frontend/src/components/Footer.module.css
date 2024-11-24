@@ -1,0 +1,95 @@
+.footerDiv {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: var(--transparent-bg-color);
+    backdrop-filter: blur(4px);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    row-gap: 20px;
+    grid-template-areas: 'links visitingCard address'
+        'copyright copyright copyright';
+}
+
+.links {
+    width: 100%;
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links h3 {
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--first-fancy-font);
+}
+
+.links a {
+    font-size: 15px;
+    color: rgb(171, 171, 250);
+    text-decoration: none;
+    font-family: var(--first-fancy-font);
+
+    &&:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.address {
+    width: 100%;
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.address h2 {
+    margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-family: var(--first-fancy-font);
+}
+
+.address h3 {
+    color: var(--secondary-color);
+    font-family: var(--first-fancy-font);
+    font-weight: 400;
+}
+
+.address h5 {
+    color: var(--secondary-color);
+    font-family: var(--first-fancy-font);
+    font-weight: 400;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.socialIcons a {
+    margin: 0 10px;
+    display: block;
+    height: auto;
+}
+
+.socialIcons img {
+    width: 40px;
+}
+
+.copyRight {
+    width: 100%;
+    height: 20px;
+    grid-area: copyright;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.copyRight .homeLink{
+    color: rgb(187, 187, 255);
+}

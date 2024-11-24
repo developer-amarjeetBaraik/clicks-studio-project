@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard'
 const servicesData = [
     {
         service: "Pre-wedding",
-        imageURL: "pre-wedding.png"
+        imageURL: "pre-wedding.svg"
     },
     {
         service: "Engagement",
@@ -13,27 +13,27 @@ const servicesData = [
     },
     {
         service: "Wedding",
-        imageURL: ""
+        imageURL: "wedding.svg"
     },
     {
         service: "Aniversary",
-        imageURL: ""
+        imageURL: "aniversary.svg"
     },
     {
         service: "Cinematography",
-        imageURL: ""
+        imageURL: "cinematography.svg"
     },
     {
         service: "Candid Photography",
-        imageURL: ""
+        imageURL: "candid-photography.svg"
     },
     {
         service: "Traditional Photography /Videography",
-        imageURL: ""
+        imageURL: "traditional-photography-videography.svg"
     },
     {
         service: "Music-Album Shoot",
-        imageURL: ""
+        imageURL: "music-album-shoot.svg"
     },
 ]
 const Services = () => {

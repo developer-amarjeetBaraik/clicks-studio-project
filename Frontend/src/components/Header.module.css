@@ -1,7 +1,7 @@
 .headerDiv{
     padding: 10px 20px;
     width: 100%;
-    background-color: var(--component-color);
+    background-color: var(--transparent-bg-color);
     height: auto;
     display: flex;
     justify-content: space-between;

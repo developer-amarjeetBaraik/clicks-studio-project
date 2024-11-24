@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --component-color:#FF5D49;
+  --component-color: #FF5D49;
   --primary-color: #050A30;
   --secondary-color: #F4F6FC;
   --tertiary-color: #A6A8AF;
+  --transparent-bg-color: rgba(255, 255, 255, 0.347);
   --button-width: 80px;
   --button-height: 35px;
   --border-radius: 7px;
   --first-fancy-font: "Montserrat", sans-serif;
+  --form-font-family: "Inconsolata", monospace;
+  --clicks-studio-name-font: "Inter", sans-serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

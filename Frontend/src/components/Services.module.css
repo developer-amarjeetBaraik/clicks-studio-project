@@ -1,7 +1,6 @@
 .cardList{
     padding: 20px;
     width: 100%;
-    height: auto;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
