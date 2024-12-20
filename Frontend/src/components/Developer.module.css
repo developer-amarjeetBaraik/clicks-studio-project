@@ -1,0 +1,12 @@
+.developerDiv{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+@media (800px <= width){
+    .developerDiv{
+        font-size: 13px;
+    }
+}

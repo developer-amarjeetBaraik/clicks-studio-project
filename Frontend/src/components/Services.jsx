@@ -16,7 +16,7 @@ const servicesData = [
         imageURL: "wedding.svg"
     },
     {
-        service: "Aniversary",
+        service: "Aniversary", 
         imageURL: "aniversary.svg"
     },
     {
@@ -41,7 +41,7 @@ const Services = () => {
         <ul className={style.cardList}>
             {
                 servicesData.map(item => {
-                   return <li className={style.card}><ServiceCard service={item.service} imageURL={item.imageURL} /></li>
+                   return <li key={item.service} className={style.card}><ServiceCard service={item.service} imageURL={item.imageURL} /></li>
                 })
             }
         </ul>

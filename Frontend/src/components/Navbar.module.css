@@ -1,23 +1,28 @@
 .navbarDiv{
+    padding: 2px 0;
     width: auto;
-    height: 50px;
+    height: auto;
     background-color: var(--primary-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 100px;
 }
 .navbarDiv a{
-    padding: 10px 5px;
-    text-decoration: none;
+    margin: 0 7px 7px 0;
+    padding: 5px 5px;
     color: var(--secondary-color);
+    font-family: var(--first-fancy-font);
+    font-size: 15px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 
     &:hover{
-        background-color: red;
+        background-color: var(--transparent-bg-color);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
 }
 .active{
-    color: var(--component-color);
+    background-color: var(--tertiary-color);
 }

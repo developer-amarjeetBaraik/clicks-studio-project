@@ -3,7 +3,7 @@ import style from './VisitingCard.module.css'
 import cameraShutter from '../assets/someElements/cameraShutter.svg'
 import callSvg from '../assets/someElements/call.svg'
 import locationSvg from '../assets/someElements/location.svg'
-import globeSvg from '../assets/someElements/globe.svg'
+import instagramSvg from '../assets/someElements/instagram.svg'
 import emailSvg from '../assets/someElements/email.svg'
 import weddingCouple from '../assets/someElements/wedding couple.png'
 import { Link } from 'react-router-dom'
@@ -34,8 +34,8 @@ const VisitingCard = () => {
                   <img src={locationSvg} alt="" />
                 </div>
                 <div className={style.detailsHolderDiv}>
-                  <p>clicks-studio.in</p>
-                  <img src={globeSvg} alt="" />
+                  <Link target='_blank' to={'https://www.instagram.com/clicks_studio.in'}>clicks_studio.in</Link>
+                  <img src={instagramSvg} alt="" />
                 </div>
                 <div className={style.detailsHolderDiv}>
                   <a href="mailto:clicksstudio.in@gmail.com">clicksstudio.in@gmail.com</a>

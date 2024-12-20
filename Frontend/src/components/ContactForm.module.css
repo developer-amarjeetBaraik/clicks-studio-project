@@ -1,8 +1,9 @@
-.form{
-    padding: 20px;
-    min-width: 450px;
+.form {
+    padding: 10px;
+    min-width: 300px;
     width: 100%;
     max-width: 700px;
+    max-height: 900px;
     color: var(--secondary-color);
     background-color: rgba(255, 255, 255, 0.285);
     backdrop-filter: blur(5px);
@@ -12,7 +13,8 @@
     align-items: center;
     font-family: var(--form-font-family);
 }
-.formHead{
+
+.formHead {
     width: auto;
     margin: 20px 0;
     display: flex;
@@ -21,46 +23,56 @@
     flex-direction: column;
     gap: 10px;
 }
-.formHead h3{
+
+.formHead h3 {
     font-size: 25px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.formHead p{
+
+.formHead p {
     color: var(--tertiary-color);
 }
-.formLogo{
+
+.formLogo {
     width: 60px;
 }
-.formInput{
+
+.formInput {
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-.inputGroup{
+
+.inputGroup {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-.inputGroup label{
+
+.inputGroup label {
     font-weight: 300;
     font-style: italic;
 }
-.inputGroup input, select{
+
+.inputGroup input,
+select {
     padding: 0 7px;
     font-size: 15px;
     min-height: 30px;
     height: auto;
     font-family: var(--form-font-family);
-    &&:focus{
+
+    &&:focus {
         outline: none;
     }
 }
-.form button{
+
+.form button {
     margin-top: 20px;
     width: var(--button-width);
     height: var(--button-height);
@@ -70,7 +82,8 @@
     border-radius: var(--border-radius);
     transition: scale 0.2s ease-in;
     cursor: pointer;
-    &&:hover{
+
+    &&:hover {
         background-color: var(--component-color);
         scale: 1.1;
     }

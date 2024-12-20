@@ -1,7 +1,9 @@
 .card {
-    padding: 10px 20px 30px 20px;
-    width: 300px;
-    min-height: 450px;
+    padding: 10px;
+    min-width: 150px;
+    width: 45vw;
+    max-width: 200px;
+    min-height: 250px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -11,51 +13,69 @@
     border-radius: 7px;
     border: 1px solid rgba(255, 255, 255, 0.299);
     transition: scale ease-in 0.2s;
-    &:hover{
+
+    &:hover {
         scale: 1.02;
     }
 }
 
-.serviceName{
-    font-size: 25px;
+.serviceName {
+    font-size: 15px;
     color: var(--secondary-color);
     font-family: var(--first-fancy-font);
     font-weight: 400;
 }
 
-.serviceImage{
+.serviceImage {
     width: 100%;
 }
-.cardBtn{
-    padding: 0 20px;
+
+.cardBtn {
+    padding: 0 1vw;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 }
-.cardBtn button{
-    padding: 5px 10px ;
-    width: auto;
-    height: 30px;
+
+.cardBtn button {
+    padding: 5px 7px;
+    min-width: 50px;
+    width: 100%;
+    max-width: 80px;
+    height: 100%;
     border-radius: var(--border-radius);
     cursor: pointer;
+    font-size: 10px;
 }
-.workBtn{
+
+.workBtn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: none;
     transition: scale ease-in 0.2s;
-    &&:hover{
+    
+    &&:hover {
         background-color: var(--component-color);
         color: black;
         scale: 1.05;
     }
 }
-.cardBtn .bookShootBtn{
+
+.cardBtn .bookShootBtn {
     background-color: var(--component-color);
     border: none;
     transition: scale ease-in 0.2s;
-    &&:hover{
+
+    &&:hover {
         background-color: var(--primary-color);
         color: var(--secondary-color);
         scale: 1.05;
     }
 }
+
+@media (800px <= width){
+    .card {
+        max-width: 300px;
+    }
+}
+ 

@@ -3,11 +3,46 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import HomePageLayout from './layouts/HomePageLayout'
+import AppLayout from './layouts/AppLayout'
+import ServicesPageLayout from './layouts/ServicesPageLayout'
+import WorkSamplePageLayout from './layouts/WorkSamplePageLayout'
+import ContactUsPageLayout from './layouts/ContactUsPageLayout'
+import WhyUsPageLayout from './layouts/WhyUsPageLayout'
+import HandleFormContext from './store/HandleFormContext'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePageLayout />
+    element:
+      <HandleFormContext>
+        <AppLayout />
+      </HandleFormContext>,
+    children: [
+      {
+        path: '/',
+        element: <HomePageLayout />
+      },
+      {
+        path: '/services',
+        element: <ServicesPageLayout />
+      },
+      {
+        path: '/work-sample',
+        element: <WorkSamplePageLayout />
+      },
+      {
+        path: '/why-us',
+        element: <WhyUsPageLayout />
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUsPageLayout />
+      }
+    ]
+  },
+  {
+    path: '*',
+    element: '404 Page not found!'
   }
 ],
   {

@@ -1,0 +1,24 @@
+.contactUsPageLayoutDiv{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactUsPageLayoutDiv h3{
+    padding: 0 10%;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 4vw;
+    font-family: var(--first-fancy-font);
+    font-weight: 500;
+}
+.contactUsPageLayoutDiv h3 a{
+    color: var(--secondary-color);
+}
+@media (800px <= width){
+    .contactUsPageLayoutDiv h3{
+        font-size: 30px;
+    }
+}

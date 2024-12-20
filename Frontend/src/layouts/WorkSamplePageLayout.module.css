@@ -1,0 +1,20 @@
+.workSamplePageLayoutDiv{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workSamplePageLayoutDiv h3{
+    width: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 5vw;
+    font-family: var(--first-fancy-font);
+    font-weight: 500;
+}
+@media (800px <= width){
+    .workSamplePageLayoutDiv h3{
+        font-size: 30px;
+    }
+}

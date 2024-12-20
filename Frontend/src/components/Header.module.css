@@ -2,7 +2,6 @@
     padding: 10px 20px;
     width: 100%;
     background-color: var(--transparent-bg-color);
-    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,11 +9,11 @@
 .headerDiv .homeLink{
     width: auto;
     height: auto;
-    display: flex;
+    display: flex; 
     align-items: center;
 }
 .headerDiv .logo{
-    width: 70px;
+    width: 60px;
 }
 
 .phoneNumberDiv{

@@ -1,6 +1,10 @@
 .visitingCardDiv {
-    padding: 30px 0;
-    width: 100%;
+    margin: auto;
+    padding: 0 0 20px 0;
+    min-width: 330px;
+    width: auto;
+    max-width: 500px;
+    height: 235px;
     grid-area: visitingCard;
     display: flex;
     align-items: center;
@@ -8,7 +12,8 @@
 }
 
 .visitingCard {
-    position: relative;
+    position: absolute;
+    top: 5px;
     width: 380px;
     height: 235px;
     background-color: white;
@@ -153,4 +158,10 @@
     font-weight: 200;
     color: #F1C886;
     font-family: var(--clicks-studio-name-font);
+}
+
+@media (max-width:320px) {
+    .visitingCard{
+        scale: 0.7;
+    }
 }

@@ -1,11 +1,12 @@
 .cardList{
-    padding: 20px;
-    width: 100%;
+    padding: 20px 3px;
+    width: auto;
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
     background-color: var(--primary-color);
 }
 .card{
     list-style: none;
-}
+} 

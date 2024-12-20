@@ -1,0 +1,9 @@
+.appLayoutDiv{
+    margin: auto;
+    max-width: 1500px;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--primary-color);
+}

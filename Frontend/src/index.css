@@ -19,3 +19,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* To design the navbar when the tab is selected */
+.active {
+  background-color: var(--tertiary-color);
+}
