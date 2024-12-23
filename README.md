@@ -53,13 +53,23 @@ To get started with the project, follow these steps:
    ```bash
    yarn start
    ```
+## Add necessary resources
+
+Add some resources like images and videos in the directory.
+
+go to the root directory of this project
+```bash
+cd <root-directory-of-this-project>
+```
+
+go to the Public folder and then add some images
+
 
 ## API Documentation
 
 The website integrates the following APIs:
 
-- **Google Maps API:** Used for displaying maps and getting directions.  
-- **Email Service API:** Used for sending emails.
+- **Emailjs API:** Used for Delivering eamil to the owner when the user submit contact form.
 
 Refer to the respective API documentation for detailed information on endpoints, parameters, and response formats.
 
