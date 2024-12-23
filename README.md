@@ -35,7 +35,7 @@ To get started with the project, follow these steps:
    yarn install
    ```
 4. Configure API keys and database credentials in the `.env` file.  
-   ```bash
+   ```
     // Create environment variable
 
     PORT = 3000
