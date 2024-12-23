@@ -62,7 +62,24 @@ go to the root directory of this project
 cd <root-directory-of-this-project>
 ```
 
-go to the Public folder and then add some images
+go to 
+```bash
+cd <root-directroy-of-this-project>/frontend/src/assets
+```
+**Add the hero video here**
+
+add hero video named **HeroSectionVideo.mp4** so that video can be displayed in the background of the hero section of the website.
+
+go to the
+```bash
+cd <root-directroy-of-this-project>/frontend/src/assets/someGlimpses
+```
+**then add**
+
+1. glimp1.mp4
+2. glimp2.jpg
+2. glimp3.jpg
+2. glimp4.jpg
 
 
 ## API Documentation
