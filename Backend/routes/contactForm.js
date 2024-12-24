@@ -6,6 +6,7 @@ import 'dotenv/config';
 const router = express.Router()
 
 router.post('/', (req, res) => {
+    console.log('req get..')
     const { name, phone, email, service, budget } = req.body
 
     const templateParams = {
