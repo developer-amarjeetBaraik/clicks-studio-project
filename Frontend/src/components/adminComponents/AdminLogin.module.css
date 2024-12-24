@@ -1,0 +1,96 @@
+.form {
+    padding: 10px;
+    min-width: 300px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 900px;
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.285);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--form-font-family);
+}
+
+.formHead {
+    width: auto;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formHead h3 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formHead p {
+    color: var(--tertiary-color);
+}
+
+.formLogo {
+    width: 60px;
+}
+
+.formInput {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.inputGroup label {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.inputGroup input,
+select {
+    padding: 0 7px;
+    font-size: 15px;
+    min-height: 30px;
+    height: auto;
+    font-family: var(--form-font-family);
+
+    &&:focus {
+        outline: none;
+    }
+}
+
+.form button {
+    margin-top: 20px;
+    width: var(--button-width);
+    height: var(--button-height);
+    font-family: var(--form-font-family);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    transition: scale 0.2s ease-in;
+    cursor: pointer;
+
+    &&:hover {
+        background-color: var(--component-color);
+        scale: 1.1;
+    }
+}
+
+@media (800px > width) {
+    .formHead p{
+        font-size: 20px;
+    }
+}

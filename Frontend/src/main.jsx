@@ -9,6 +9,7 @@ import WorkSamplePageLayout from './layouts/WorkSamplePageLayout'
 import ContactUsPageLayout from './layouts/ContactUsPageLayout'
 import WhyUsPageLayout from './layouts/WhyUsPageLayout'
 import HandleFormContext from './store/HandleFormContext'
+import AdminLoginPageLayout from './layouts/AdminLoginPageLayout'
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         element: <ContactUsPageLayout />
       }
     ]
+  },
+  {
+    path: '/auth/admin',
+    element: <AdminLoginPageLayout />
   },
   {
     path: '*',
