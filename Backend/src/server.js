@@ -5,7 +5,7 @@ import 'dotenv/config'
 import contactForm from '../routes/contactForm.js'
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 app.use('/contact-form', contactForm)
