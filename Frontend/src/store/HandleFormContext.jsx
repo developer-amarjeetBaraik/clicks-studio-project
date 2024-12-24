@@ -10,11 +10,12 @@ const HandleFormContext = ({ children }) => {
     const submitForm = (formData) => {
         fetch('/api/contact-form', {
             method: "POST",
-            headers:{
-                "Content-Type":"application/json"
+            headers: {
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(formData),
-        }).then(res => res.json())
+        })
+            // .then(res => res.json())
             .then(data => console.log(data))
             .catch(err => console.log(err))
     }
