@@ -5,7 +5,7 @@ import whatsapp from '../assets/whatsapp.svg'
 import instagram from '../assets/instagram.svg'
 import phone from '../assets/phone.svg'
 import email from '../assets/email.svg'
-import Developer from './developer'
+import Developer from './Developer'
 
 const Footer = () => {
   return (
