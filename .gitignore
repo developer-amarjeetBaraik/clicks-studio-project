@@ -8,12 +8,10 @@ yarn-error.log*
 *.pdf
 
 #Images
-*.jpg
 *.jpeg
 *.gif
 
 #video
-*.mp4
 
 # Logs
 logs
