@@ -30,14 +30,6 @@ app.get('/', (req, res) => {
     })
 })
 
-app.get('/testing', (req, res) => {
-    console.log("it's testing...")
-    res.send({
-        status: 200,
-        message: 'testing done'
-    })
-})
-
 app.listen(port, () => {
     console.log(`Backend is listening on port: ${port}`)
 })
