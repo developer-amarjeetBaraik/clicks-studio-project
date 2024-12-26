@@ -95,7 +95,7 @@ The website integrates the following APIs:
 
 - **Emailjs API:** Used for Delivering eamil to the owner when the user submit contact form.
 
-Refer to the respective API documentation for detailed information on endpoints, parameters, and response formats.
+Refer to the respective [API documentation](https://www.emailjs.com/docs/) for detailed information on endpoints, parameters, and response formats.
 
 ## Customization and Modifications
 
