@@ -9,7 +9,8 @@ const app = express()
 const port = process.env.PORT || 3000
 
 app.use(cors({
-    origin:['https://clicks-studio-project-frontend.onrender.com']
+    origin:['https://clicks-studio-project-frontend.onrender.com'],
+    methods:['GET','POST','PUT']
 }))
 app.use(bodyParser.json())
 app.use('/contact-form', contactForm)
