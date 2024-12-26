@@ -10,6 +10,7 @@ import ContactUsPageLayout from './layouts/ContactUsPageLayout'
 import WhyUsPageLayout from './layouts/WhyUsPageLayout'
 import HandleFormContext from './store/HandleFormContext'
 import AdminLoginPageLayout from './layouts/AdminLoginPageLayout'
+import PageNotFound from './components/PageNotFound'
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: '404 Page not found!'
+    element: <PageNotFound/>
   }
 ],
   {

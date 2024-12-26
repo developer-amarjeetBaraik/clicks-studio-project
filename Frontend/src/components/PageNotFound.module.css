@@ -1,0 +1,41 @@
+.bgDiv{
+    margin: auto;
+    max-width: 1500px;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100vh;
+    color: white;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.errorMessage{
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-family: var(--first-fancy-font);
+    font-weight: 500;
+}
+.pageNotFoundImage{
+    width: 50%;
+}
+
+.homeLink{
+    color: var(--secondary-color);
+    font-size: 25px;
+    font-family: var(--first-fancy-font);
+    font-weight: 500;
+}
+
+@media (800px <= width){
+    .errorMessage{
+        font-size: 40px;
+    }
+    .pageNotFoundImage{
+        width: 30%;
+    }
+    .homeLink{
+        font-size: 35px;
+    }
+}
