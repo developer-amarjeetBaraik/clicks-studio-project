@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom'
 const AppLayout = () => {
 
   const fetchToServer = ()=>{
-    fetch('/api/',{
+    fetch('/',{
       method:'GET',
     }).then(res => res.json())
     .then(data => console.log(data))
