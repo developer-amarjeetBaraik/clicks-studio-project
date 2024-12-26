@@ -6,7 +6,7 @@ import 'dotenv/config';
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    console.log(`req get.. ${req.url}`)
+    console.log(`req get.. ${req.baseUrl}`)
     // const { name, phone, email, service, budget } = req.body
 
     // const templateParams = {
@@ -41,7 +41,7 @@ router.get('/', (req, res) => {
 
     res.send({
         status:200,
-        message:`request get to ${req.url}`
+        message:`request get to ${req.baseUrl}`
     })
 
 })
