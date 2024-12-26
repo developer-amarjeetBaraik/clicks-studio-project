@@ -18,6 +18,10 @@ The Clicks Studio website is a custom-built web application designed to highligh
 
 To get started with the project, follow these steps:
 
+there are two parts of code 1. `Frontend` 2. `Backend`
+
+### 1. Frontend
+
 1. Clone the repository using:  
    ```bash
    git clone <repository-url>
@@ -26,7 +30,12 @@ To get started with the project, follow these steps:
    ```bash
    cd <project-directory>
    ```
-3. Install dependencies:  
+
+3. Nebigate to `Frontend` folder
+   ```bash
+   cd <project-directory>/Frontend
+   ```
+4. Install dependencies:  
    ```bash
    npm install
    ```
@@ -34,7 +43,33 @@ To get started with the project, follow these steps:
    ```bash
    yarn install
    ```
-4. Configure API keys and database credentials in the `.env` file.  
+
+5. To run the app
+   ```bash
+   npm run dev
+   ```
+
+### 2. Backend
+1. Open a new terminal
+
+2. Navigate to the project directory:  
+   ```bash
+   cd <project-directory>
+   ```
+3. Nebigate to `Backend` folder
+   ```bash
+   cd <project-directory>/Backend
+   ```
+4. Install dependencies:  
+   ```bash
+   npm install
+   ```
+   or  
+   ```bash
+   yarn install
+   ```
+
+5. Configure API keys and database credentials in the `.env` file.  
    ```
     // Create environment variable
 
@@ -53,34 +88,6 @@ To get started with the project, follow these steps:
    ```bash
    yarn start
    ```
-## Add necessary resources
-
-Add some resources like images and videos in the directory.
-
-go to the root directory of this project
-```bash
-cd <root-directory-of-this-project>
-```
-
-go to 
-```bash
-cd <root-directroy-of-this-project>/frontend/src/assets
-```
-**Add the hero video here**
-
-add hero video named **HeroSectionVideo.mp4** so that video can be displayed in the background of the hero section of the website.
-
-go to the
-```bash
-cd <root-directroy-of-this-project>/frontend/src/assets/someGlimpses
-```
-**then add**
-
-1. glimp1.mp4
-2. glimp2.jpg
-2. glimp3.jpg
-2. glimp4.jpg
-
 
 ## API Documentation
 
@@ -107,6 +114,10 @@ Contributions to the project are welcome! To contribute:
 - **Suggest Features:** Propose new features or enhancements.  
 - **Submit Pull Requests:** Make clear and concise commit messages when submitting pull requests.
 
+## Authors
+
+- [@developer-amarjeetBaraik](https://github.com/developer-amarjeetBaraik)
+
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is free to use you can use these code in your project
