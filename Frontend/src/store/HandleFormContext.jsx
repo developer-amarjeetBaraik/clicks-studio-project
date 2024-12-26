@@ -8,7 +8,7 @@ export const FormContext = createContext({
 const HandleFormContext = ({ children }) => {
 
     const submitForm = (formData) => {
-        fetch('/api/', {
+        fetch('/api/testing', {
             method: "GET",
             // headers: {
             //     "Content-Type": "application/json"
