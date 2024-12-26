@@ -20,19 +20,24 @@ router.post('/', (req, res) => {
     emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams, {
         publicKey: process.env.PUBLIC_KEY_FOR_EMAIL,
         privateKey: process.env.PRIVATE_KEY_FOR_EMAIL,
-    }).then((response) => {
-        const newFormData = new FormData(templateParams)
+    }).then(async (response) => {
         try {
-            newFormData.save()
+            const newFormData = new FormData(templateParams)
+            await newFormData.save()
+            res.send({
+                status: 200,
+                message: 'Data sent successfully.'
+            })
         } catch (error) {
             console.log(error)
+            res.send({
+                status: 403,
+                message: 'Something went wrong.'
+            })
         }
-        res.send({
-            status: 200,
-            message: 'Data sent successfully.'
-        })
     })
         .catch((err) => {
+            console.log(err)
             res.send({
                 status: 403,
                 message: 'Something went wrong.'

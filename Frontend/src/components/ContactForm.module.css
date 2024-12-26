@@ -32,7 +32,17 @@
 }
 
 .formHead p {
+    font-size: 16px;
     color: var(--tertiary-color);
+}
+
+.formHead .successMessage{
+    font-size: 18px;
+    color: green;
+}
+.formHead .errorMessage{
+    font-size: 18px;
+    color: red;
 }
 
 .formLogo {
@@ -76,15 +86,26 @@ select {
     margin-top: 20px;
     width: var(--button-width);
     height: var(--button-height);
-    font-family: var(--form-font-family);
-    font-weight: 600;
     border: none;
     border-radius: var(--border-radius);
     transition: scale 0.2s ease-in;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &&:hover {
         background-color: var(--component-color);
         scale: 1.1;
     }
+}
+
+.form button img{
+    width: 30%;
+}
+
+.form button p{
+    font-size: 15px;
+    font-family: var(--form-font-family);
+    font-weight: 600;
 }

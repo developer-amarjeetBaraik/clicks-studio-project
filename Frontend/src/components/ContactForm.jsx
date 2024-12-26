@@ -2,10 +2,11 @@ import React, { useContext, useRef } from 'react'
 import style from './ContactForm.module.css'
 import { Form } from 'react-router-dom'
 import { FormContext } from '../store/HandleFormContext'
+import spinnerImage from '../assets/loading spinner.svg'
 
 const ContactForm = () => {
 
-    const { submitForm } = useContext(FormContext)
+    const { isLoading, submitForm, serverMessage } = useContext(FormContext)
 
     const name = useRef()
     const phone = useRef()
@@ -38,6 +39,7 @@ const ContactForm = () => {
             <div className={style.formHead}>
                 <h3>Contact to <img className={style.formLogo} src="./Clicks Studio Logo.png" alt="" /></h3>
                 <p>We respond quickly</p>
+                <p className={(serverMessage === null) ? null : (serverMessage.status === 200) ? style.successMessage : (serverMessage.status === 403) ? style.errorMessage : null}>{serverMessage?.message}</p>
             </div>
             <div className={style.formInput}>
                 <span className={style.inputGroup}>
@@ -79,7 +81,7 @@ const ContactForm = () => {
                         <option value="1,30,000 to 1,50,000">1,30,000 to 1,50,000</option>
                     </select>
                 </span>
-                <button type='submit' className={style.submitBtn}>Proceed</button>
+                <button type='submit' className={style.submitBtn}>{isLoading ? <img src={spinnerImage} /> : <p>Proceed</p>}</button>
             </div>
         </Form>
     )
