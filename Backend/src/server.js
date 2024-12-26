@@ -23,6 +23,7 @@ const connectDatabase = () => {
 connectDatabase() 
 
 app.get('/', (req, res) => {
+    console.log(`request get... in ${req.url}`)
     res.send({
         status: 200,
         message: "Hello world"
