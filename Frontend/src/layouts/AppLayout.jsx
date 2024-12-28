@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom'
 const AppLayout = () => {
 
   return (
-    <div className={style.appLayoutDiv} onLoad={fetchToServer()}>
+    <div className={style.appLayoutDiv}>
       <Header/>
       {/* Navbar */}
       <Navbar/>
