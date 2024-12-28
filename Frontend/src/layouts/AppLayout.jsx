@@ -7,8 +7,16 @@ import { Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
 
+  const fetchToServer = ()=>{
+    fetch('/api/',{
+      method:'GET',
+    }).then(res => res.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+  }
+
   return (
-    <div className={style.appLayoutDiv}>
+    <div className={style.appLayoutDiv} onLoad={fetchToServer()}>
       <Header/>
       {/* Navbar */}
       <Navbar/>
